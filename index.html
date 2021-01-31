@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exploration PoC</title>
+    </head>
+    <body>
+        <div id="app">
+            <div id=header></div>
+            <div id="body">
+                <div id="scene" data-bind="foreach: tiles">
+                    <div class="tile"
+                         data-bind="class: computedStyle" >
+                        <div class="img-container">
+                            <img src="" data-bind="attr: { src: img }" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div class="btn-container">
+                    <button data-bind="click: nextStep">Next</button>
+                </div>
+            </div>
+        </div>
+        <script src="dist/vendor-bundle.js"></script>
+        <script src="dist/app-bundle.js"></script>
+    </body>
+</html>
